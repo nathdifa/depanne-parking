@@ -3,6 +3,7 @@ let nodes;
 let polygons;
 let parkings;
 let machines;
+let url = 'https://raw.githubusercontent.com/nathdifa/depanne-parking/refs/heads/main/data/data.json';
 
 const zones = {
     'DPA1/Red': 'Rouge',
@@ -91,10 +92,9 @@ async function init() {
 };
 
 function loadData() {
-    fetch('data/data.json').then(function (res) {
+    fetch(url).then(function (res) {
         return res.json();
     }).then(function (data) {
-        console.log(data)
         parkings = data.parkings;
         machines = data.machines;
         
@@ -209,7 +209,7 @@ function get_pos() {
                         alert("Vous n'avez pas activé la géolocalisation.");
                         break;
                     default:
-                        console.log("Erreur de géolocalisation.");
+                        alert("Erreur de géolocalisation.");
                 }
                 return null;
             },
