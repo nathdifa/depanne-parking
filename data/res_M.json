@@ -1,0 +1,214 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-22T17:33:30Z",
+    "timestamp_areas_base": "2026-05-12T07:36:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 9872299545,
+  "lat": 51.0980517,
+  "lon": 2.5833891,
+  "tags": {
+    "amenity": "vending_machine",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 11945005554,
+  "lat": 51.0992570,
+  "lon": 2.5921940,
+  "tags": {
+    "amenity": "vending_machine",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 11945016191,
+  "lat": 51.1026450,
+  "lon": 2.5906583,
+  "tags": {
+    "amenity": "vending_machine",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 12189920181,
+  "lat": 51.0947341,
+  "lon": 2.5658396,
+  "tags": {
+    "amenity": "vending_machine",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 12277153321,
+  "lat": 51.1006262,
+  "lon": 2.5898911,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "operator": "Streeteo",
+    "payment:cards": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "ref": "226",
+    "vending": "parking_tickets",
+    "zone": "DPA2/Orange"
+  }
+},
+{
+  "type": "node",
+  "id": 12277153492,
+  "lat": 51.1014401,
+  "lon": 2.5909747,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "operator": "Streeteo",
+    "payment:cards": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "ref": "127",
+    "vending": "parking_tickets",
+    "zone": "DPA1/Red"
+  }
+},
+{
+  "type": "node",
+  "id": 12408876464,
+  "lat": 51.0954299,
+  "lon": 2.5859958,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "payment:app": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:debit_cards": "yes",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 12408931838,
+  "lat": 51.0954133,
+  "lon": 2.5866320,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "payment:app": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:debit_cards": "yes",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 12408931839,
+  "lat": 51.0947558,
+  "lon": 2.5868698,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "payment:app": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:debit_cards": "yes",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 12408931840,
+  "lat": 51.0949179,
+  "lon": 2.5858395,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "payment:app": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:debit_cards": "yes",
+    "vending": "parking_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 14003130167,
+  "lat": 51.0992943,
+  "lon": 2.5877984,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "operator": "Streeteo",
+    "payment:cards": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "ref": "227",
+    "vending": "parking_tickets",
+    "zone": "DPA2/Orange"
+  }
+},
+{
+  "type": "node",
+  "id": 14003130458,
+  "lat": 51.0990742,
+  "lon": 2.5869527,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "operator": "Streeteo",
+    "payment:cards": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "ref": "282",
+    "vending": "parking_tickets",
+    "zone": "DPA2/Orange"
+  }
+},
+{
+  "type": "node",
+  "id": 14028716266,
+  "lat": 51.1014249,
+  "lon": 2.5871227,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "operator": "Streeteo",
+    "payment:cards": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "ref": "211",
+    "vending": "parking_tickets",
+    "zone": "DPA2/Orange"
+  }
+},
+{
+  "type": "node",
+  "id": 14028716618,
+  "lat": 51.1013796,
+  "lon": 2.5866929,
+  "tags": {
+    "amenity": "vending_machine",
+    "currency:EUR": "yes",
+    "operator": "Streeteo",
+    "payment:cards": "yes",
+    "payment:coins": "yes",
+    "payment:contactless": "yes",
+    "vending": "parking_tickets",
+    "zone": "DPA2/Orange"
+  }
+}
+
+  ]
+}

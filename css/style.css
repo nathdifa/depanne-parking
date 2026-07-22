@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2ead9;
+}
+
+header {
+  background-color: #123a52;
+  color: white;
+  padding: 15px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #cfe1ea;
+}
+
+#toolbar {
+  background-color: #fffaf0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #d8c9a8;
+}
+
+.button1 {
+  background-color: white;
+  border: 1px solid #2c7da0;
+  color: #123a52;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button1.actif {
+  background-color: #2c7da0;
+  color: white;
+}
+
+#message-chargement {
+  margin: 0;
+  padding: 5px 20px;
+  color: #e8622e;
+  font-size: 13px;
+}
+
+#map {
+  flex: 1;
+  height: 100vh;
+  width: 100%;
+}
+
+.popup-parking h3 {
+  margin: 0 0 6px 0;
+  color: #123a52;
+  font-size: 15px;
+}
+
+.ligne-popup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+.ligne-popup span:first-child {
+  color: #6b6558;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #fffaf0;
+  border: 1px solid #d8c9a8;
+}
+
+.leaflet-popup-tip {
+  background-color: #fffaf0;
+}
+
+.start-stop {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+
+.start-stop .button1 {
+  flex: 1;
+}
