@@ -26,7 +26,7 @@ window.onload = function () {
 async function init() {
     document.getElementById('title').innerText = 'De Panne Parking';
 
-    map = L.map('map').setView([51.097, 2.587], 15);
+    map = L.map('map').setView([51.0995, 2.5881], 17);
     map.setMinZoom(14);
     map.setMaxZoom(20);
 
@@ -77,7 +77,6 @@ async function init() {
     map.addLayer(polygons);
 
     loadData();
-
     
     let pos = await get_pos();
     if (pos) { 
@@ -184,7 +183,7 @@ function makeParkingPopup(tags) {
 
     if (tags.zone) {
         let zone = tags.zone.slice(0, 4)
-        html += `<div class="start-stop"> <button type="button" class="button1" onClick="startSms(${zone})">START</button>`
+        html += `<div class="start-stop"> <button type="button" class="button1" onClick="startSms('${zone}')">START</button>`
         html += '<button type="button" class="button1" onClick="stopSms()">STOP</button> </div>'
         html += "</div>";
     };
@@ -229,6 +228,7 @@ async function centre_pos() {
 }
 
 function startSms(zone) {
+    console.log('te')
     let plate = prompt("Entrez votre plaque d'immatriculation (sans tirets)", '1ABC123');
     if (plate == null || plate == '') {
         alert("Numéro invalide");
