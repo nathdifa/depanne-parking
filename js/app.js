@@ -76,6 +76,9 @@ async function init() {
     map.addLayer(nodes);
     map.addLayer(polygons);
 
+    loadData();
+
+    
     let pos = await get_pos();
     if (pos) { 
         let posMarker = L.circleMarker(pos, {
@@ -87,8 +90,6 @@ async function init() {
         });
         nodes.addLayer(posMarker);
     }
-
-    loadData();
 };
 
 function loadData() {
