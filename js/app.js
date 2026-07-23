@@ -87,9 +87,24 @@ async function init() {
             fillColor: '#4285F4',
             fillOpacity: 1
         });
-        nodes.addLayer(posMarker);
+        map.addLayer(posMarker);
     }
-};
+
+    
+    map.on('zoomend', function() {
+        var currentZoom = map.getZoom();
+        
+        if (currentZoom >= 17) { 
+            if (!map.hasLayer(nodes)) {
+                map.addLayer(nodes);
+            }
+        } else {
+            if (map.hasLayer(nodes)) {
+                map.removeLayer(nodes);
+            }
+        }
+    });
+}
 
 function loadData() {
     fetch(url).then(function (res) {
@@ -126,9 +141,9 @@ function showData() {
             color: 'black',
             weight: 2, 
             fillColor: 'white',
-            fillOpacity: .75
+            fillOpacity: .5
         });
-        marker.bindPopup();
+        marker.bindPopup(makeMachinePopup(machine.tags));
         nodes.addLayer(marker);
     }
 };
@@ -157,7 +172,7 @@ function makeParkingPopup(tags) {
     const capacityStr = tags?.capacity ? ` (${tags.capacity} places)` : '';
     let content = new Map();
 
-    html += "<h3> Parking" + (tags.name ?? '') + capacityStr + "</h3>";
+    html += "<h3> Parking " + (tags.name ?? '') + capacityStr + "</h3>";
 
     if (!tags) return;
 
@@ -187,6 +202,20 @@ function makeParkingPopup(tags) {
         html += '<button type="button" class="button1" onClick="stopSms()">STOP</button> </div>'
         html += "</div>";
     };
+    return html;
+};
+
+function makeMachinePopup(tags) {
+    let html = "<div class='popup-parking'>";
+    let content = new Map();
+
+    html += "<h3> Horodateur " + (tags.ref ?? '') + ' (Zone ' + zones[tags.zone] + ")</h3>";
+
+    let zone = tags.zone.slice(0, 4)
+    html += `<div class="start-stop"> <button type="button" class="button1" onClick="startSms('${zone}')">START</button>`
+    html += '<button type="button" class="button1" onClick="stopSms()">STOP</button> </div>'
+    html += "</div>";
+
     return html;
 };
 
